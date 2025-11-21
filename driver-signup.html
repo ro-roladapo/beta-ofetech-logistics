@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driver Application | Ofetech Logistic</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="page-alt">
+  <header class="site-header simple-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">O</span>
+        <span class="logo-text">Ofetech <span>Logistics</span></span>
+      </div>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="login.html" class="nav-link-ghost">Log In</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <h1>Driver application</h1>
+      <p class="auth-subtitle">
+        Tell us about you and your vehicle. A team member will review your info and follow up.
+      </p>
+
+      <form id="driver-form">
+        <div class="form-grid">
+          <label>
+            First name
+            <input type="text" name="firstName" required />
+          </label>
+          <label>
+            Last name
+            <input type="text" name="lastName" required />
+          </label>
+        </div>
+
+        <div class="form-grid">
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required />
+          </label>
+        </div>
+
+        <label>
+          City & state
+          <input type="text" name="location" placeholder="Raleigh, NC" required />
+        </label>
+
+        <label>
+          What vehicle do you drive?
+          <select name="vehicle" required>
+            <option value="">Select a vehicle type</option>
+            <option value="cargo-van">Cargo van (RAM ProMaster, etc.)</option>
+            <option value="sprinter">Sprinter / high roof van</option>
+            <option value="box-truck-24">24–26 ft box truck</option>
+            <option value="pickup">Pickup truck + trailer</option>
+            <option value="other">Other commercial vehicle</option>
+          </select>
+        </label>
+
+        <label>
+          How many vehicles do you own or plan to own?
+          <input type="number" name="fleetSize" min="1" value="1" />
+        </label>
+
+        <label>
+          Tell us about your experience (optional)
+          <textarea name="experience" rows="4" placeholder="Years of driving, type of loads, routes, etc."></textarea>
+        </label>
+
+        <button type="submit" class="btn-primary-full">Submit application</button>
+        <p class="form-note" id="driver-result"></p>
+      </form>
+
+      <p class="auth-footer-link">
+        Already approved? <a href="login.html">Log in to your driver dashboard →</a>
+      </p>
+    </div>
+  </main>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
