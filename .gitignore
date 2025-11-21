@@ -1,2 +1,12 @@
+# macOS system files
 .DS_Store
-assets/.DS_Store
+*/.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Node / future backend
+node_modules/
