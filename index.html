@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ofetech Logistics | Fast Local Delivery & Last-Mile Solutions</title>
+  <meta name="description" content="Ofetech Logistics connects shippers with professional drivers for same-day and last-mile delivery across the U.S." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <span class="logo-mark">O</span>
+        <span class="logo-text">Ofetech <span>Logistics</span></span>
+      </div>
+
+      <nav class="nav-desktop">
+        <a href="#shippers">For Shippers</a>
+        <a href="#drivers">For Drivers</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#coverage">Coverage</a>
+        <a href="login.html" class="nav-link-ghost">Log In</a>
+        <a href="driver-signup.html" class="nav-link-primary">Become a Driver</a>
+      </nav>
+
+      <button class="nav-toggle" onclick="toggleMobileNav()">
+        ☰
+      </button>
+    </div>
+
+    <nav id="nav-mobile" class="nav-mobile">
+      <a href="#shippers" onclick="toggleMobileNav()">For Shippers</a>
+      <a href="#drivers" onclick="toggleMobileNav()">For Drivers</a>
+      <a href="#how-it-works" onclick="toggleMobileNav()">How It Works</a>
+      <a href="#coverage" onclick="toggleMobileNav()">Coverage</a>
+      <a href="login.html" onclick="toggleMobileNav()">Log In</a>
+      <a href="driver-signup.html" onclick="toggleMobileNav()">Become a Driver</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Same-day delivery powered by **trusted local drivers**.</h1>
+          <p>
+            Ofetech Logistics connects small businesses, e-commerce brands, and individuals
+            with professional drivers for fast, reliable delivery—without the headache of
+            building your own fleet.
+          </p>
+          <div class="hero-actions">
+            <a href="#shippers" class="btn-primary">Ship with Ofetech</a>
+            <a href="driver-signup.html" class="btn-outline">Drive with Ofetech</a>
+          </div>
+          <div class="hero-meta">
+            <span>✔ Live tracking</span>
+            <span>✔ Insured deliveries</span>
+            <span>✔ Nationwide expansion</span>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <div class="card hero-card">
+            <h2>Quick quote</h2>
+            <form id="quote-form">
+              <label>
+                Pickup ZIP
+                <input type="text" name="pickup" required placeholder="e.g. 27616" />
+              </label>
+              <label>
+                Drop-off ZIP
+                <input type="text" name="dropoff" required placeholder="e.g. 27703" />
+              </label>
+              <label>
+                Package type
+                <select name="package">
+                  <option value="small">Small box</option>
+                  <option value="medium">Medium box</option>
+                  <option value="large">Large box</option>
+                  <option value="furniture">Furniture / Large item</option>
+                  <option value="pallet">Pallet / Freight</option>
+                </select>
+              </label>
+              <button type="submit" class="btn-primary-full">Get instant estimate</button>
+              <p class="form-note" id="quote-result"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shippers section -->
+    <section id="shippers" class="section">
+      <div class="container section-grid">
+        <div>
+          <h2>Built for **small businesses, retailers, and warehouses**.</h2>
+          <p>
+            Whether you’re moving one pallet, 20 furniture pieces, or daily e-commerce
+            orders, Ofetech Logistics gives you flexible capacity without owning a single
+            truck.
+          </p>
+          <ul class="feature-list">
+            <li>On-demand, same-day and scheduled deliveries</li>
+            <li>Real-time tracking and delivery proof</li>
+            <li>Professional drivers with cargo vans and box trucks</li>
+            <li>Simple, transparent pricing—no surprises</li>
+          </ul>
+          <a href="login.html" class="link-cta">Create shipper account →</a>
+        </div>
+        <div class="card-list">
+          <div class="card">
+            <h3>Retail & furniture</h3>
+            <p>Offer same-day local delivery for bulky items without hiring your own drivers.</p>
+          </div>
+          <div class="card">
+            <h3>Warehouses & 3PLs</h3>
+            <p>Offload peak volume to trusted Ofetech drivers when capacity is tight.</p>
+          </div>
+          <div class="card">
+            <h3>Small business</h3>
+            <p>Deliver to your customers in hours, not days, with flexible, per-drop pricing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Drivers section -->
+    <section id="drivers" class="section section-alt">
+      <div class="container section-grid">
+        <div>
+          <h2>Earn more with your **RAM ProMaster, cargo van, or box truck**.</h2>
+          <p>
+            Drive with Ofetech Logistics and get access to local delivery work that fits
+            your schedule. You choose when to drive—we connect you with paying loads.
+          </p>
+          <ul class="feature-list">
+            <li>Keep your independence—no forced dispatch</li>
+            <li>See payout before you accept a job</li>
+            <li>Local and regional routes (home most nights)</li>
+            <li>Support for future fleet owners and operators</li>
+          </ul>
+          <a href="driver-signup.html" class="btn-primary">Start driver application</a>
+        </div>
+        <div class="card-list">
+          <div class="card">
+            <h3>Driver requirements</h3>
+            <p>
+              Valid license, proof of insurance, clean driving record, and eligible vehicle
+              (cargo van, sprinter, box truck, or pickup with trailer).
+            </p>
+          </div>
+          <div class="card">
+            <h3>Future fleet owners</h3>
+            <p>
+              Planning to add more vans or a 24–26ft box truck? Build your own small fleet
+              while Ofetech brings you consistent work.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Fast onboarding</h3>
+            <p>
+              Complete your application online, upload documents, and track your approval
+              status inside the Ofetech driver dashboard.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <h2 class="section-title">How Ofetech Logistics works</h2>
+        <div class="steps-grid">
+          <div class="step">
+            <span class="step-number">1</span>
+            <h3>Create your account</h3>
+            <p>Shippers and drivers sign up online in minutes. No long contracts or hidden fees.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">2</span>
+            <h3>Post or accept jobs</h3>
+            <p>Shippers post loads with pickup & drop-off details. Drivers see payouts before accepting.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">3</span>
+            <h3>Track in real time</h3>
+            <p>Follow your delivery from pickup to drop-off with in-app status updates and POD.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">4</span>
+            <h3>Get paid fast</h3>
+            <p>Drivers are paid quickly after confirmed delivery. Shippers get clear, simple reporting.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coverage -->
+    <section id="coverage" class="section section-alt">
+      <div class="container section-grid">
+        <div>
+          <h2>Starting in the U.S., expanding city by city.</h2>
+          <p>
+            Ofetech Logistics is building a network that allows shippers to reach customers
+            nationwide while giving local drivers more earning power.
+          </p>
+          <ul class="feature-list">
+            <li>Initial focus: U.S. coverage with flexible service models</li>
+            <li>Ideal for small businesses, retailers, and growing e-commerce brands</li>
+            <li>Support for future interstate and nationwide operations</li>
+          </ul>
+        </div>
+        <div class="card coverage-card">
+          <h3>Join the network early</h3>
+          <p>
+            Apply now as a shipper or driver and grow with Ofetech as we expand routes,
+            markets, and service levels.
+          </p>
+          <div class="coverage-actions">
+            <a href="login.html" class="btn-outline">Shipper sign up</a>
+            <a href="driver-signup.html" class="btn-primary">Driver sign up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="logo footer-logo">
+          <span class="logo-mark">O</span>
+          <span class="logo-text">Ofetech <span>Logistics</span></span>
+        </div>
+        <p class="footer-text">
+          Technology-driven logistics and delivery services connecting shippers with
+          professional local drivers.
+        </p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <a href="#shippers">Shippers</a>
+        <a href="#drivers">Drivers</a>
+        <a href="#how-it-works">How it works</a>
+      </div>
+      <div>
+        <h4>Account</h4>
+        <a href="login.html">Log in</a>
+        <a href="driver-signup.html">Become a driver</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@ofetechlogistics.com</p>
+        <p>Based in Raleigh, North Carolina</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Ofetech Logistics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
